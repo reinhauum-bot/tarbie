@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tarbie – jurek jyluy</title>
+    <style>
+        .gallery-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px;
+    background-image: url(background-tarbie.jpeg);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    touch-action: none;
+}
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+.gallery-container img {
+    margin-right: 10px; 
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+.thumbnail:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+    </style>
+</head>
+<body style="background-color: #f6ffea">
+    <img src="https://gcdnb.pbrd.co/images/f52XZvRoeW0F.jpg?o=1" alt="Tarbie" width="100%">
+    <div class="gallery-container">
+        <img src="Adobe Express - file.png" alt="Description of Image 1" class="thumbnail">
+        <img src="seisenbi-tarbie.png" alt="Description of Image 2" class="thumbnail">
+        <img src="sarsenbi-tarbie.png" alt="Description of Image 3" class="thumbnail">
+        <img src="beisenbi-tarbie.png" alt="Description of Image 4" class="thumbnail">
+        <img src="zhuma-tarbie.png" alt="Description of Image 5" class="thumbnail">
+    </div>
+</body>
